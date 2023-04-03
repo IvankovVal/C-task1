@@ -1,23 +1,24 @@
-﻿string minVal= " Наименьшее значение : ";
-string maxVal= " Наибольшее значение : ";
-//Логические переменные
-bool a = true;
-Console.WriteLine($"I think it is {a}");
-//byte
-Console.WriteLine("Тип byte." + minVal + byte.MinValue + maxVal + byte.MaxValue );
-//int
-Console.WriteLine("Тип int." + minVal + int.MinValue + maxVal + int.MaxValue );
-//long
-Console.WriteLine("Тип long." + minVal + long.MinValue + maxVal + long.MaxValue );
-//float
-Console.WriteLine("Тип float." + minVal + float.MinValue + maxVal + float.MaxValue );
-//double
-Console.WriteLine("Тип double." + minVal + double.MinValue + maxVal + double.MaxValue );
-//char
-char l, m;
-l ='к'; m = 'у';
-Console.WriteLine($"{l}{m}!");
-//string
-string n;
-n = "Конец.";
-Console.WriteLine($"{n}");
+﻿/*Создать консольное приложение, которое будет принимать 2 любых числа одного типа (int, float, double)
+ и показывать какое больше, а также выводить их сумму.
+*/
+
+Console.WriteLine("Введите первое число");
+string? str1 = "";
+str1 = Console.ReadLine();
+
+Console.WriteLine("Введите второе число");
+string? str2 = "";
+str2 = Console.ReadLine();
+
+int num1 = 0;
+int num2 = 0;
+
+num1 = int.Parse(str1);
+num2 = int.Parse(str2);
+
+if(num1 > num2){
+Console.WriteLine($"{num1} больше, чем {num2}");
+}
+else { 
+Console.WriteLine($"{num2} больше, чем {num1}");
+}
