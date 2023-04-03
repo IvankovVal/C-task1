@@ -22,3 +22,4 @@ Console.WriteLine($"{num1} больше, чем {num2}");
 else { 
 Console.WriteLine($"{num2} больше, чем {num1}");
 }
+Console.WriteLine($"Сумма чисел равна: а{num2 + num1}");
